@@ -1,0 +1,19 @@
+package com.example.projeto_escola.dtos;
+
+import java.util.List;
+
+public class ApiErrorDTO {
+    private List<String> errors;
+
+    public ApiErrorDTO(String error) {
+        this.errors = List.of(error);
+    }
+
+    public List<String> getErrors() {
+        return errors;
+    }
+
+    public ApiErrorDTO(List<String> error){
+        this.errors=errors;
+    }
+}
